@@ -9,6 +9,7 @@ import Internship from './components/Internship';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { Toaster } from 'react-hot-toast';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -56,6 +57,7 @@ function App() {
       >
         <i className="fas fa-chevron-up"></i>
       </button>
+      <Analytics />
     </div>
   );
 }
